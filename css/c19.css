@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    min-height: 600px;
+    padding-top: 60px;
+    background-image: linear-gradient(to right,#bfc7bf, rgb(240, 236, 236));
+    font-weight: bold;
+  }
+
+  p{
+    color: rgb(26, 26, 26);
+  }
+  li{
+    color: rgb(26, 26, 26);
+  }
+  section{
+    padding: 0px 50px;
+    padding-bottom: 100px;
+  }
+  
+  #navbar{
+    background-color: rgb(3, 3, 3);
+    height: 50px;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    padding: 20;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .icon{
+    display: block;
+    float: left;
+  }
+  
+  #navbar ul{
+    list-style-type: none;
+  }
+  #navbar li{
+    float:left;
+    margin: 5px;
+  }
+  #navbar a{
+    color: white;
+    padding: 5px;
+  }
+  #navbar a:hover{
+    color: rgb(7, 1, 1);
+    border: 1px solid white;
+    background-color: white;
+  }
+
+  a{
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  table, th, td {
+    border: 2px solid rgb(85, 81, 81);
+    border-collapse: collapse;
+  }  
+  th, td {
+    padding: 5px;
+  }
+  th {
+    text-align: center;
+    font-weight: bolder;
+    color:white;
+    background-color: rgb(49, 47, 47);
+  }
+  tr:nth-child(even){
+    background-color: rgb(253, 220, 112);
+  }
+  tr{
+    font-weight: bold;
+  }
+  table{
+    margin: 0 auto;
+    margin-bottom: 100px ;
+  }
+  
+  footer{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+  }
+  footer a{
+    color: yellow;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      font-weight: lighter;
+      padding-top: 110px;
+    }
+    
+    #navbar{
+      height: 100px;
+      font-weight: bold;
+    }
+    
+    
+  table, th, td {
+    font-size: 80%;
+  }  
+    th, td {
+    padding: 0px;
+  }
+  tr:nth-child(even){
+    background-color:#010b0e;
+    color:#ffffff;
+  }
+  th{
+    background-color: red;
+  }
+  }
+
+  @media only screen and (max-width: 400px){
+    table, th, td {
+      font-size: 60%;
+    } 
+  }
