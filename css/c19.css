@@ -98,7 +98,21 @@ body{
   footer a{
     color: yellow;
   }
-
+ #buffering{
+   text-align: center;
+ }
+ #error{
+   text-align: center;
+ }
+ #error_reason{
+   text-align: center;
+ }
+ #errorf{
+  text-align: center;
+}
+#error_reasonf{
+  text-align: center;
+}
 
   @media only screen and (max-width: 600px) {
     body {

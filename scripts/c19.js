@@ -4,7 +4,7 @@ const err_rsn = document.querySelector('#error_reason');
 const errtxtf = document.querySelector('#errorf');
 const err_rsnf = document.querySelector('#error_reasonf');
 const fact_cont = document.querySelector('#fact-cont');
-
+const buffering = document.querySelector('#buffering')
 fetch("https://covid-19-tracking.p.rapidapi.com/v1", {
 	"method": "GET",
 	"headers": {
@@ -17,7 +17,8 @@ fetch("https://covid-19-tracking.p.rapidapi.com/v1", {
 	})
 	.then((datas)=>{
 	  console.log(datas);
-	  table.innerHTML = "<tr><th>Region</th><th>Active Cases</th><th>New Cases</th><th>New Deaths</th><th>Total Cases</th><th>Total Deaths</th><th>Total Recovered</th><th>Updated On</th></tr>"
+	  buffering.innerHTML = null;
+	  table.innerHTML = "<tr><th><i class=\"fas fa-globe-americas\"></i> Region</th><th>Active Cases</th><th>New Cases</th><th>New Deaths</th><th>Total Cases</th><th>Total Deaths</th><th>Total Recovered</th><th><i class=\"far fa-clock\"></i> Updated On</th></tr>"
 	  datas.forEach(data=>{
 		  
 		  console.log(data.Country_text);
@@ -51,6 +52,7 @@ fetch("https://covid-19-tracking.p.rapidapi.com/v1", {
 	})})
 .catch(err => {
 	console.error(err);
+	buffering.innerHTML = null;
 	errtxt.innerText = "Sorry Could not Fetch Data";
 	err_rsn.innerText += err;
 	
