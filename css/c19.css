@@ -2,7 +2,7 @@ body{
     margin: 0;
     min-height: 600px;
     padding-top: 60px;
-    background-image: linear-gradient(to right,#bfc7bf, rgb(240, 236, 236));
+    background-image: white;
     font-weight: bold;
   }
 
